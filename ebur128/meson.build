@@ -35,10 +35,4 @@ pkgconfig_data.set('prefix', get_option('prefix'))
 pkgconfig_data.set('libdir', get_option('libdir'))
 configure_file(input: 'libebur128.pc.cmake', output: 'libebur128.pc', configuration: pkgconfig_data, install: true, install_dir: get_option('libdir') / 'pkgconfig')
 # pkg = import('pkgconfig')
-# pkg.generate(libraries: ebur128_lib,
-#     subdirs: inc,
-#     version: meson.version(),
-#     name: 'libebur128',
-#     filebase: 'ebur128',
-#     description: 'EBU R128 standard for loudness normalization'
-# )
+# pkg.generate(ebur128_lib, install_dir: get_option('libdir')/'pkgconfig')
