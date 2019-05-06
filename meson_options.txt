@@ -1,0 +1,2 @@
+option('ENABLE_INTERNAL_QUEUE_H', type: 'boolean', value: true, description: 'Use internal queue implementation instead of system\'s')
+option('ENABLE_TESTS', type: 'boolean', value: false, description: 'Enable tests & minimal application targets')
