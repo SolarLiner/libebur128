@@ -29,7 +29,7 @@ ebur128_dep = declare_dependency(include_directories: inc, link_with: ebur128_li
 pkgconfig_data = configuration_data()
 pkgconfig_data.set('CMAKE_INSTALL_PREFIX', get_option('prefix'))
 pkgconfig_data.set('CMAKE_INSTALL_LIBDIR', get_option('libdir'))
-pkgconfig_data.set('EBUR128_VERSION', meson.version())
+pkgconfig_data.set('EBUR128_VERSION', meson.project_version())
 pkgconfig_data.set('includedir', get_option('includedir'))
 pkgconfig_data.set('prefix', get_option('prefix'))
 pkgconfig_data.set('libdir', get_option('libdir'))
